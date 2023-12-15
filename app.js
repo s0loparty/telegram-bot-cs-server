@@ -49,7 +49,7 @@ bot.on('message', async (msg) => {
 			}
 			
 			try {
-				const server = Gamedig.query({
+				const server = await Gamedig.query({
 					type: SERVER_TYPE,
 					host: SERVER_IP,
 					port: SERVER_PORT
